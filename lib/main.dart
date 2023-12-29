@@ -9,6 +9,21 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget timerDisplay = Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.symmetric(
+        vertical: 12,
+        horizontal: 24,
+      ),
+      decoration: BoxDecoration(
+        color: Colors.amber.shade200,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: const Text(
+        '00h   00m   00s',
+        style: TextStyle(fontSize: 48),
+      ),
+    );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -25,21 +40,7 @@ class MainApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Container(
-                margin: const EdgeInsets.only(bottom: 16),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 12,
-                  horizontal: 24,
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.amber.shade200,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Text(
-                  '00h   00m   00s',
-                  style: TextStyle(fontSize: 48),
-                ),
-              ),
+              timerDisplay,
             ],
           ),
         ),
