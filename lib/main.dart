@@ -1,9 +1,10 @@
 import 'package:create_timer/keypad.dart';
+import 'package:create_timer/keypad_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
-  // debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = false;
   runApp(const MainApp());
 }
 
@@ -46,6 +47,7 @@ class MainApp extends StatelessWidget {
             children: [
               timerDisplay,
               const KeyPad(),
+              const KeyPadFunctions(),
             ],
           ),
         ),
