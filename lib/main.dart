@@ -1,6 +1,9 @@
+import 'package:create_timer/keypad.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
+  // debugPaintSizeEnabled = false;
   runApp(const MainApp());
 }
 
@@ -10,7 +13,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget timerDisplay = Container(
-      margin: const EdgeInsets.only(bottom: 16),
+      margin: const EdgeInsets.only(bottom: 48),
       padding: const EdgeInsets.symmetric(
         vertical: 12,
         horizontal: 24,
@@ -24,6 +27,7 @@ class MainApp extends StatelessWidget {
         style: TextStyle(fontSize: 48),
       ),
     );
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -41,6 +45,7 @@ class MainApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               timerDisplay,
+              const KeyPad(),
             ],
           ),
         ),
