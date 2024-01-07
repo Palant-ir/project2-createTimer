@@ -5,11 +5,15 @@ class KeyPad extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
+    final ButtonStyle btnStyle = ElevatedButton.styleFrom(
+      backgroundColor: Colors.amber,
       textStyle: const TextStyle(fontSize: 48),
       shape: const CircleBorder(),
       padding: const EdgeInsets.all(32),
-      // minimumSize: const Size.fromRadius(10),
+    );
+
+    const TextStyle btnTextStyle = TextStyle(
+      color: Colors.black,
     );
 
     return Column(
@@ -19,19 +23,19 @@ class KeyPad extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('1'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('1', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('2'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('2', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('3'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('3', style: btnTextStyle),
             )
           ],
         ),
@@ -40,19 +44,19 @@ class KeyPad extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('4'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('4', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('5'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('5', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('6'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('6', style: btnTextStyle),
             )
           ],
         ),
@@ -61,19 +65,19 @@ class KeyPad extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('7'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('7', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('8'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('8', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('9'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('9', style: btnTextStyle),
             )
           ],
         ),
@@ -82,19 +86,19 @@ class KeyPad extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('00'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('00', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('0'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('0', style: btnTextStyle),
             ),
             ElevatedButton(
-              onPressed: null,
-              style: style,
-              child: const Text('<'),
+              onPressed: () {},
+              style: btnStyle,
+              child: const Text('<', style: btnTextStyle),
             )
           ],
         ),
